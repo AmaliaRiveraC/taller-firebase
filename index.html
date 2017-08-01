@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Taller Firebase</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	</head>
+	<body>
+		<h1>Firebase database</h1>
+
+		<div class="row">
+			<form class="col s12" id="crear-usuario">
+				<div class="row">
+					<div class="input-field col s6">
+						<input placeholder="Placeholder" id="name" type="text" class="validate">
+						<label for="first_name">First Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="password" type="password" class="validate">
+						<label for="password">Password</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<button type="submit">Crear Usuario</button>
+			</form>
+		</div>
+		<section id="usuarios"></section>
+
+		<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+		<script src="src/app.js"></script>
+
+	</body>
+</html>
